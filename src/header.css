@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  li a {
+    font-size: 9vw;
+  }
+  .splash {
+    max-height: 80%;
+    max-width: auto;
+  }
+  body {
+    grid-template-areas: ". ";
+  }
+}
+
+h1 {
+  font-family: "helvetica", sans-serif;
+  font-size: 13vw;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  transition: 0.1s;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: rgb(232, 226, 197);
+}
+
+.globe {
+  grid-area: globe;
+  display: flex;
+  justify-content: center;
+}
+
+.globe img {
+  max-width: 100%;
+}
+
+.splash {
+  grid-area: splash;
+  position: fixed;
+  bottom: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.splash img {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  bottom: 0;
+  transition: 0.5ms;
+}
